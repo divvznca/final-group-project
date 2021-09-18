@@ -1,32 +1,23 @@
-(function ($) {
-    $(function () {
-
-        //  open and close nav 
-        $('#navbar-toggle').click(function () {
-            $('nav ul').slideToggle();
-        });
-
-
-        // Hamburger toggle
-        $('#navbar-toggle').on('click', function () {
-            this.classList.toggle('active');
-        });
-
-
+(function ($) { // Begin jQuery
+    $(function () { // DOM ready
         // If a link has a dropdown, add sub menu toggle.
         $('nav ul li a:not(:only-child)').click(function (e) {
-            $(this).siblings('.navbar-dropdown').slideToggle("slow");
-
-            // Close dropdown when select another dropdown
-            $('.navbar-dropdown').not($(this).siblings()).hide("slow");
+            $(this).siblings('.nav-dropdown').toggle();
+            // Close one dropdown when selecting another
+            $('.nav-dropdown').not($(this).siblings()).hide();
             e.stopPropagation();
         });
-
-
-        // Click outside the dropdown will remove the dropdown class
+        // Clicking away from dropdown will remove the dropdown class
         $('html').click(function () {
-            $('.navbar-dropdown').hide();
+            $('.nav-dropdown').hide();
         });
-    });
-})(jQuery);
-
+        // Toggle open and close nav styles on click
+        $('#nav-toggle').click(function () {
+            $('nav ul').slideToggle();
+        });
+        // Hamburger to X toggle
+        $('#nav-toggle').on('click', function () {
+            this.classList.toggle('active');
+        });
+    }); // end DOM ready
+})(jQuery); // end jQuery

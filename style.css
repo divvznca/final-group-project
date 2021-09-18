@@ -20,6 +20,14 @@ a{
     text-decoration: none;
 }
 
+
+
+ul li a.active {
+    color: #070707;
+  border-style: solid;
+  border-color: #AAAFDF;
+}
+
  .brand a, .brand a:visited {
      color: #913FBE;
      text-decoration: none;     
@@ -582,7 +590,57 @@ h3{
     .column {
       flex: 33.3%;
       max-width: 33.3%;
+      
     }
+}
+
+
+/*Prototype sections*/
+
+.container-fluid{
+  background-image:url("./images/Web\ 1366\ –\ 5@2x.png");
+  background-repeat: no-repeat;
+background-size: contain;
+max-height: 850px;
+width: 100%;
+}
+
+.col-md-3 {
+  padding: 0;
+
+}
+
+.inner-img {
+  transition: 0.3s;
+}
+
+.inner-img {
+  padding:20px;
+  
+}
+
+
+.inner-img:hover {
+  transform: scale(1.1);
+}
+
+#img-responsive1 {
+margin-top: 400px;
+}
+
+#img-responsive2 {
+margin-left: -150px;
+margin-top: 100px;
+}
+
+#img-responsive3 {
+margin-left: -100px;
+margin-top: 100px;
+}
+
+#img-responsive4 {
+margin-top: 400px;
+
 }
 
 
