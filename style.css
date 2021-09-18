@@ -1,5 +1,7 @@
 /*Navbar*/
- .navigation {
+ 
+
+.navigation {
      height: 70px;
      background-color:#fff;
 }
@@ -598,10 +600,10 @@ h3{
 /*Prototype sections*/
 
 .container-fluid{
-  background-image:url("./images/Web\ 1366\ –\ 5@2x.png");
+  background-image:url("./images/section\ 3@2x.png");
   background-repeat: no-repeat;
-background-size: contain;
-max-height: 850px;
+background-size: cover;
+height: 850px;
 width: 100%;
 }
 
@@ -619,7 +621,6 @@ width: 100%;
   
 }
 
-
 .inner-img:hover {
   transform: scale(1.1);
 }
@@ -627,22 +628,34 @@ width: 100%;
 #img-responsive1 {
 margin-top: 400px;
 }
-
 #img-responsive2 {
-margin-left: -150px;
-margin-top: 100px;
-}
-
-#img-responsive3 {
-margin-left: -100px;
-margin-top: 100px;
-}
-
-#img-responsive4 {
 margin-top: 400px;
-
 }
 
+@media screen and (max-width:800px) {
+.container-fluid{
+  background-image:url("./images/mobile\ version.png");
+  background-repeat: no-repeat;
+background-size: cover;
+height: 500px;
+width: 100%;
+}
+
+.inner-img{
+    margin-top: -100px;
+  }
+
+  #img-responsive1 {
+margin-top: 40px;
+width:150px
+}
+#img-responsive2 {
+margin-top: 110px;
+width:150px;
+margin-left: -155px;
+}
+
+}
 
 /*how does it work
 
