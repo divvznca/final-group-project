@@ -10,21 +10,19 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
         integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&family=Source+Sans+Pro&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://use.typekit.net/wdt0qnu.css">
-    <script src="./js/index.js"></script>
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
 
 
 </head>
@@ -53,7 +51,7 @@
                         <a href="#!">Blog</a>
                     </li>
                     <li>
-                        <a href="#!">Contact</a>
+                        <a href="#!">Log In</a>
                     </li>
 
                 </ul>
@@ -104,7 +102,8 @@
         <div class="row">
             <div class="column">
                 <a href="#">
-                    <div class="container">
+                    <div class="container" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <img src="./images/Untitled design (1).png" class="image">
                         <div class="overlay">
                             <h5 class="text1">Create a profile</h5>
@@ -115,7 +114,8 @@
             </div>
             <div class="column">
                 <a href="#">
-                    <div class="container">
+                    <div class="container" class="container" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <img src="./images/serious-brown-white-basenji-dog-black-sweatshirt-watches-movie-smartphone-held-by-man-s-hands.jpg"
                             class="image">
                         <div class="overlay">
@@ -127,7 +127,8 @@
             </div>
             <div class="column">
                 <a href="#">
-                    <div class="container">
+                    <div class="container" class="container" data-aos="flip-left" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="2000">
                         <img src="./images/PLaying white.png" class="image">
                         <div class="overlay">
                             <h5 class="text1">Set a play date</h5>
@@ -139,75 +140,77 @@
             </div>
         </div>
     </Section>
+
     <h3 id="heading2">Our App</h3>
-
-
 
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-12 col-md-12">
-                <img class="inner-img"
-                    src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" width="250"
-                    id="img-responsive1" />
-                <img class="inner-img" src="http://assets.stickpng.com/images/5847e95fcef1014c0b5e4822.png" width="250"
-                    id="img-responsive2" />
+                <img class="inner-img" src="./images/google play.png" width="280" id="img-responsive1" />
+                <img class="inner-img" src="./images/apple store.png" width="280" id="img-responsive2" />
             </div>
         </div>
     </div>
 
-    <!--
-    <div class="col-xs-12 col-md-3">
-        <img class="inner-img" src="./images/Group 2172@2x.png" alt="1" id="img-responsive2" />
-    </div>
-    <div class="col-xs-12 col-md-3">
-        <img class="inner-img" src="./images/Group 2172@2x.png" alt="1" id="img-responsive3" />
-    </div>
 
+    <!--subscription-->
 
-
-    
-
-    <div class="cards">
-        <div class="card">
-
-            <img src="./images/Untitled design (1).png" alt="">
-            <div class="body">
-                <h2>Create a profile</h2>
-                <p>Upload a Picture and fill in a few simple details</p>
+    <div class="wrapper">
+        <div class="box">
+            <div class="header"><i class="fa fa-paper-plane" aria-hidden="true"></i>
+                <p class="hidden">Thanks!</p>
             </div>
-
-        </div>
-
-        <div class="card">
-
-            <img src="./images/serious-brown-white-basenji-dog-black-sweatshirt-watches-movie-smartphone-held-by-man-s-hands.jpg"
-                alt="">
-            <div class="body">
-                <h2>Search for a buddy</h2>
-                <p>Our Location based search allows you find a pup closest to you</p>
+            <div class="form">
+                <input type="text" placeholder="Your Email" class="field">
+                <input type="button" value="Subscribe" class="button">
             </div>
-        </div>
-
-        <div class="card">
-
-
-            <img src="./images/david-taffet-5gXPapBz40c-unsplash.jpg" alt="">
-            <div class="body">
-                <h2>Set a play date</h2>
-                <p>Chat with a fellow pet parent and block the date on our IN-APP calendar</p>
-            </div>
+            <h3 id="heading3">Get your Treats</h3>
         </div>
 
 
-    </div>
-    -->
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
-        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        <!--scroller-->
+
+        <a id="scroller-button"></a>
+
+        <!--footer-->
+
+
+
+        <footer>
+            <div class="rounded-social-buttons">
+                <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i
+                        class="fab fa-linkedin"></i></a>
+                <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i
+                        class="fab fa-youtube"></i></a>
+                <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+            <div class="footer-copyright-link"> ©2021. | Designed By: Team Pawz & Play. |
+                All
+                rights reserved.
+
+            </div>
+
+        </footer>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" </script>
+            <script src="./js/jquery-3.6.0.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="./js/index.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+                AOS.init();
+        </script>
 </body>
 
 </html>

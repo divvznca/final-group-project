@@ -1,3 +1,4 @@
+
 (function ($) { // Begin jQuery
     $(function () { // DOM ready
         // If a link has a dropdown, add sub menu toggle.
@@ -17,7 +18,41 @@
         });
         // Hamburger to X toggle
         $('#nav-toggle').on('click', function () {
-            this.classList.toggle('active');
+            this.nav - list.toggle('active');
         });
     }); // end DOM ready
 })(jQuery); // end jQuery
+
+
+var button = document.querySelector('.button');
+var field = document.querySelector('.field');
+var icon = document.querySelector('.header i');
+var text = document.querySelector('.header p');
+
+button.addEventListener('click', function () {
+
+    if (field.value === '') {
+        field.placeholder = 'You must enter your email';
+        // alert('You must enter an email');
+    } else {
+        icon.classList.toggle('animation');
+        text.classList.toggle('show');
+    }
+});
+
+var btn = $('#scroller-button');
+
+$(window).scroll(function () {
+    if ($(window).scrollTop() > 300) {
+        btn.addClass('show');
+    } else {
+        btn.removeClass('show');
+    }
+});
+
+btn.on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate({ scrollTop: 0 }, '300');
+});
+
+
